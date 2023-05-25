@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GET 요청</title>
+</head>
+<body>
+	<h1>GET 방식의 요청</h1>
+	
+	<h2>링크 클릭</h2>
+	<ul>
+		<li><a href="reqGet?id=hong&page=2&sort=date">요청1</a></li>
+		<li><a href="reqGet?id=kim&page=1&sort=review">요청2</a></li>
+		<li><a href="reqGet?id=kang&page=3&sort=pop">요청3</a></li>
+	</ul>
+	
+	<h2>폼 제출</h2>
+	<form method="get" action="reqGet2">
+		<div>
+			<label>구분</label><br />
+			<input type="radio" name="opt" value="title" checked="checked">제목
+			<input type="radio" name="opt" value="writer" >작성자
+			<input type="radio" name="opt" value="content" >내용
+		</div>
+		<div>
+			<label>검색어</label><br />
+			<input type="text" name="keyword"/>
+		</div>
+		<div>
+			<button type="submit">검색</button>
+		</div>
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

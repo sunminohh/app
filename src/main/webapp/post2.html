@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Post 요청</title>
+</head>
+<body>
+	<h1>Post 방식의 요청</h1>
+	
+	<form method="post" action="reqPost2">
+		<div>
+			<label>상품명</label><br />
+			<input type="text" name="name" />
+		</div>
+		<div>
+			<label>제조사</label><br />
+			<input type="text" name="companyName" />
+		</div>
+		<div>
+			<label>가격</label><br />
+			<input type="number" name="price" min="0" />
+		</div>
+		<div>
+			<label>할인가격</label><br />
+			<input type="number" name="discountPrice" min="0"  />
+		</div>
+		<div>
+			<label>입고수량</label><br />
+			<input type="radio" name="amount"  value="10"  checked="checked"> 10
+			<input type="radio" name="amount"  value="20" > 20
+			<input type="radio" name="amount"  value="30" > 30
+			<input type="radio" name="amount"  value="40" > 40
+			<input type="radio" name="amount"  value="50" > 50
+			<input type="radio" name="amount"  value="100" > 100
+			<input type="radio" name="amount"  value="150" > 150
+			<input type="radio" name="amount"  value="200" > 200
+		</div>
+		<button type="submit">등록</button>
+	</form>
+</body>
+</html>
